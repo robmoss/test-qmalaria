@@ -43,7 +43,7 @@ jobs:
       - name: Render blog
         run: Rscript -e 'blogdown::build_site()'
 
-      - na,e: Upload website
+      - name: Upload website
         uses: actions/upload-pages-artifact@v4
         with:
           path: public
